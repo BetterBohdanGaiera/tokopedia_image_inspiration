@@ -1,0 +1,529 @@
+{
+  "theme": "Beach Trashy/Campy Party",
+  "marketplace": "Tokopedia Indonesia",
+  "base_url": "https://www.tokopedia.com/search?q=",
+  "created_at": "2025-12-18",
+  "looks": {
+    "male_unisex": [
+      {
+        "id": "borat",
+        "name": "БОРАТ",
+        "description": "Mankini Man",
+        "searches": [
+          {
+            "query": "Mankini hijau",
+            "url": "https://www.tokopedia.com/search?q=Mankini%20hijau"
+          },
+          {
+            "query": "Borat costume",
+            "url": "https://www.tokopedia.com/search?q=Borat%20costume"
+          },
+          {
+            "query": "Celana dalam pria lucu",
+            "url": "https://www.tokopedia.com/search?q=Celana%20dalam%20pria%20lucu"
+          }
+        ]
+      },
+      {
+        "id": "baywatch",
+        "name": "BAYWATCH",
+        "description": "Lifeguard",
+        "searches": [
+          {
+            "query": "Jaket lifeguard merah",
+            "url": "https://www.tokopedia.com/search?q=Jaket%20lifeguard%20merah"
+          },
+          {
+            "query": "Celana pantai merah pria",
+            "url": "https://www.tokopedia.com/search?q=Celana%20pantai%20merah%20pria"
+          },
+          {
+            "query": "Pelampung baywatch",
+            "url": "https://www.tokopedia.com/search?q=Pelampung%20baywatch"
+          }
+        ]
+      },
+      {
+        "id": "the_dude",
+        "name": "THE DUDE",
+        "description": "Big Lebowski",
+        "searches": [
+          {
+            "query": "Jubah mandi pria",
+            "url": "https://www.tokopedia.com/search?q=Jubah%20mandi%20pria"
+          },
+          {
+            "query": "Bathrobe man",
+            "url": "https://www.tokopedia.com/search?q=Bathrobe%20man"
+          },
+          {
+            "query": "Kacamata hitam vintage",
+            "url": "https://www.tokopedia.com/search?q=Kacamata%20hitam%20vintage"
+          },
+          {
+            "query": "Celana pendek santai",
+            "url": "https://www.tokopedia.com/search?q=Celana%20pendek%20santai"
+          }
+        ]
+      },
+      {
+        "id": "tiger_king",
+        "name": "TIGER KING",
+        "description": "Joe Exotic",
+        "searches": [
+          {
+            "query": "Kemeja motif macan pria",
+            "url": "https://www.tokopedia.com/search?q=Kemeja%20motif%20macan%20pria"
+          },
+          {
+            "query": "Wig mullet blonde",
+            "url": "https://www.tokopedia.com/search?q=Wig%20mullet%20blonde"
+          },
+          {
+            "query": "Boneka macan",
+            "url": "https://www.tokopedia.com/search?q=Boneka%20macan"
+          }
+        ]
+      },
+      {
+        "id": "miami_vice",
+        "name": "MIAMI VICE",
+        "description": "80s Detective",
+        "searches": [
+          {
+            "query": "Jas pink pria",
+            "url": "https://www.tokopedia.com/search?q=Jas%20pink%20pria"
+          },
+          {
+            "query": "Setelan jas linen",
+            "url": "https://www.tokopedia.com/search?q=Setelan%20jas%20linen"
+          },
+          {
+            "query": "Kaos putih polos",
+            "url": "https://www.tokopedia.com/search?q=Kaos%20putih%20polos"
+          }
+        ]
+      },
+      {
+        "id": "speedo_grandpa",
+        "name": "SPEEDO GRANDPA",
+        "description": "Beach Grandpa",
+        "searches": [
+          {
+            "query": "Celana renang segitiga motif",
+            "url": "https://www.tokopedia.com/search?q=Celana%20renang%20segitiga%20motif"
+          },
+          {
+            "query": "Topi bucket hat tali",
+            "url": "https://www.tokopedia.com/search?q=Topi%20bucket%20hat%20tali"
+          },
+          {
+            "query": "Kaos kaki putih panjang",
+            "url": "https://www.tokopedia.com/search?q=Kaos%20kaki%20putih%20panjang"
+          }
+        ]
+      },
+      {
+        "id": "magnum_pi",
+        "name": "MAGNUM P.I.",
+        "description": "80s Hawaii Detective",
+        "searches": [
+          {
+            "query": "Kemeja hawaii merah",
+            "url": "https://www.tokopedia.com/search?q=Kemeja%20hawaii%20merah"
+          },
+          {
+            "query": "Celana jeans pendek pria",
+            "url": "https://www.tokopedia.com/search?q=Celana%20jeans%20pendek%20pria"
+          },
+          {
+            "query": "Kumis palsu",
+            "url": "https://www.tokopedia.com/search?q=Kumis%20palsu"
+          }
+        ]
+      },
+      {
+        "id": "baryga",
+        "name": "БАРИГА",
+        "description": "90s Bandit / Gangster",
+        "searches": [
+          {
+            "query": "Rompi kulit pria",
+            "url": "https://www.tokopedia.com/search?q=Rompi%20kulit%20pria"
+          },
+          {
+            "query": "Kalung emas rantai besar",
+            "url": "https://www.tokopedia.com/search?q=Kalung%20emas%20rantai%20besar"
+          },
+          {
+            "query": "Tas pinggang kulit",
+            "url": "https://www.tokopedia.com/search?q=Tas%20pinggang%20kulit"
+          }
+        ]
+      },
+      {
+        "id": "batya",
+        "name": "БАТЯ / ЧОЛОВІК В ТРУСЕЛЯХ",
+        "description": "Dad on Vacation",
+        "searches": [
+          {
+            "query": "Kaos singlet pria putih",
+            "url": "https://www.tokopedia.com/search?q=Kaos%20singlet%20pria%20putih"
+          },
+          {
+            "query": "Celana boxer kotak kotak",
+            "url": "https://www.tokopedia.com/search?q=Celana%20boxer%20kotak%20kotak"
+          },
+          {
+            "query": "Topi kapten",
+            "url": "https://www.tokopedia.com/search?q=Topi%20kapten"
+          }
+        ]
+      }
+    ],
+    "female": [
+      {
+        "id": "rusalka",
+        "name": "РУСАЛКА",
+        "description": "Mermaid",
+        "searches": [
+          {
+            "query": "Kostum mermaid dewasa",
+            "url": "https://www.tokopedia.com/search?q=Kostum%20mermaid%20dewasa"
+          },
+          {
+            "query": "Rok mermaid",
+            "url": "https://www.tokopedia.com/search?q=Rok%20mermaid"
+          },
+          {
+            "query": "Bikini kerang",
+            "url": "https://www.tokopedia.com/search?q=Bikini%20kerang"
+          }
+        ]
+      },
+      {
+        "id": "pamela_baywatch",
+        "name": "PAMELA BAYWATCH",
+        "description": "Pamela Anderson Lifeguard",
+        "searches": [
+          {
+            "query": "Baju renang one piece merah",
+            "url": "https://www.tokopedia.com/search?q=Baju%20renang%20one%20piece%20merah"
+          },
+          {
+            "query": "High cut swimsuit red",
+            "url": "https://www.tokopedia.com/search?q=High%20cut%20swimsuit%20red"
+          },
+          {
+            "query": "Pelampung merah",
+            "url": "https://www.tokopedia.com/search?q=Pelampung%20merah"
+          },
+          {
+            "query": "Wig blonde panjang",
+            "url": "https://www.tokopedia.com/search?q=Wig%20blonde%20panjang"
+          }
+        ]
+      },
+      {
+        "id": "aerobics_80s",
+        "name": "80s AEROBICS",
+        "description": "Jane Fonda Workout",
+        "searches": [
+          {
+            "query": "Baju senam 80an",
+            "url": "https://www.tokopedia.com/search?q=Baju%20senam%2080an"
+          },
+          {
+            "query": "Leg warmer",
+            "url": "https://www.tokopedia.com/search?q=Leg%20warmer"
+          },
+          {
+            "query": "Headband senam neon",
+            "url": "https://www.tokopedia.com/search?q=Headband%20senam%20neon"
+          },
+          {
+            "query": "Leotard neon",
+            "url": "https://www.tokopedia.com/search?q=Leotard%20neon"
+          }
+        ]
+      },
+      {
+        "id": "paris_hilton",
+        "name": "PARIS HILTON 2000s",
+        "description": "Y2K It Girl",
+        "searches": [
+          {
+            "query": "Setelan jaket velvet pink",
+            "url": "https://www.tokopedia.com/search?q=Setelan%20jaket%20velvet%20pink"
+          },
+          {
+            "query": "Kacamata besar 2000an",
+            "url": "https://www.tokopedia.com/search?q=Kacamata%20besar%202000an"
+          },
+          {
+            "query": "Tas anjing kecil",
+            "url": "https://www.tokopedia.com/search?q=Tas%20anjing%20kecil"
+          }
+        ]
+      },
+      {
+        "id": "hula_girl",
+        "name": "HULA GIRL",
+        "description": "Hawaiian Dancer",
+        "searches": [
+          {
+            "query": "Rok rumbai hawaii",
+            "url": "https://www.tokopedia.com/search?q=Rok%20rumbai%20hawaii"
+          },
+          {
+            "query": "Kalung bunga lei",
+            "url": "https://www.tokopedia.com/search?q=Kalung%20bunga%20lei"
+          },
+          {
+            "query": "Bra batok kelapa",
+            "url": "https://www.tokopedia.com/search?q=Bra%20batok%20kelapa"
+          }
+        ]
+      },
+      {
+        "id": "spring_break_karen",
+        "name": "SPRING BREAK KAREN",
+        "description": "Bachelorette Party Queen",
+        "searches": [
+          {
+            "query": "Topi bride pantai",
+            "url": "https://www.tokopedia.com/search?q=Topi%20bride%20pantai"
+          },
+          {
+            "query": "Ban renang flamingo besar",
+            "url": "https://www.tokopedia.com/search?q=Ban%20renang%20flamingo%20besar"
+          },
+          {
+            "query": "Kacamata pesta lucu",
+            "url": "https://www.tokopedia.com/search?q=Kacamata%20pesta%20lucu"
+          }
+        ]
+      },
+      {
+        "id": "madam_sanatoriy",
+        "name": "МАДАМ САНАТОРІЙ",
+        "description": "Soviet Resort Lady",
+        "searches": [
+          {
+            "query": "Daster ibu ibu",
+            "url": "https://www.tokopedia.com/search?q=Daster%20ibu%20ibu"
+          },
+          {
+            "query": "Roll rambut",
+            "url": "https://www.tokopedia.com/search?q=Roll%20rambut"
+          },
+          {
+            "query": "Kacamata nenek",
+            "url": "https://www.tokopedia.com/search?q=Kacamata%20nenek"
+          }
+        ]
+      },
+      {
+        "id": "pinup_50s",
+        "name": "PIN-UP 50s",
+        "description": "Retro Beach Babe",
+        "searches": [
+          {
+            "query": "Bikini polkadot high waist",
+            "url": "https://www.tokopedia.com/search?q=Bikini%20polkadot%20high%20waist"
+          },
+          {
+            "query": "Bandana retro",
+            "url": "https://www.tokopedia.com/search?q=Bandana%20retro"
+          },
+          {
+            "query": "Kacamata cat eye",
+            "url": "https://www.tokopedia.com/search?q=Kacamata%20cat%20eye"
+          }
+        ]
+      },
+      {
+        "id": "surfer_girl",
+        "name": "SURFER GIRL",
+        "description": "Beach Surfer",
+        "searches": [
+          {
+            "query": "Baju surfing wanita",
+            "url": "https://www.tokopedia.com/search?q=Baju%20surfing%20wanita"
+          },
+          {
+            "query": "Rash guard wanita",
+            "url": "https://www.tokopedia.com/search?q=Rash%20guard%20wanita"
+          },
+          {
+            "query": "Celana boardshort wanita",
+            "url": "https://www.tokopedia.com/search?q=Celana%20boardshort%20wanita"
+          }
+        ]
+      }
+    ],
+    "accessories": [
+      {
+        "id": "acc-1",
+        "category": "Надувні речі (Zatoka vibes)",
+        "name_ua": "Надувний пончик",
+        "query": "Ban renang donat besar",
+        "url": "https://www.tokopedia.com/search?q=Ban%20renang%20donat%20besar"
+      },
+      {
+        "id": "acc-2",
+        "category": "Надувні речі (Zatoka vibes)",
+        "name_ua": "Надувна піца",
+        "query": "Ban renang pizza",
+        "url": "https://www.tokopedia.com/search?q=Ban%20renang%20pizza"
+      },
+      {
+        "id": "acc-3",
+        "category": "Надувні речі (Zatoka vibes)",
+        "name_ua": "Надувний єдиноріг",
+        "query": "Ban renang unicorn dewasa",
+        "url": "https://www.tokopedia.com/search?q=Ban%20renang%20unicorn%20dewasa"
+      },
+      {
+        "id": "acc-4",
+        "category": "Надувні речі (Zatoka vibes)",
+        "name_ua": "Надувний лебідь",
+        "query": "Ban renang angsa besar",
+        "url": "https://www.tokopedia.com/search?q=Ban%20renang%20angsa%20besar"
+      },
+      {
+        "id": "acc-5",
+        "category": "Надувні речі (Zatoka vibes)",
+        "name_ua": "Підставка для напоїв надувна",
+        "query": "Pelampung minuman",
+        "url": "https://www.tokopedia.com/search?q=Pelampung%20minuman"
+      },
+      {
+        "id": "acc-6",
+        "category": "Окуляри (Verka Serduchka style)",
+        "name_ua": "Окуляри-зірки",
+        "query": "Kacamata bintang besar",
+        "url": "https://www.tokopedia.com/search?q=Kacamata%20bintang%20besar"
+      },
+      {
+        "id": "acc-7",
+        "category": "Окуляри (Verka Serduchka style)",
+        "name_ua": "Окуляри-сердечка",
+        "query": "Kacamata hati merah",
+        "url": "https://www.tokopedia.com/search?q=Kacamata%20hati%20merah"
+      },
+      {
+        "id": "acc-8",
+        "category": "Окуляри (Verka Serduchka style)",
+        "name_ua": "LED окуляри",
+        "query": "Kacamata LED party",
+        "url": "https://www.tokopedia.com/search?q=Kacamata%20LED%20party"
+      },
+      {
+        "id": "acc-9",
+        "category": "Окуляри (Verka Serduchka style)",
+        "name_ua": "Жалюзі-окуляри",
+        "query": "Kacamata shutter",
+        "url": "https://www.tokopedia.com/search?q=Kacamata%20shutter"
+      },
+      {
+        "id": "acc-10",
+        "category": "Прикраси (Baryga/Trash style)",
+        "name_ua": "Золотий ланцюг",
+        "query": "Kalung emas rantai besar hip hop",
+        "url": "https://www.tokopedia.com/search?q=Kalung%20emas%20rantai%20besar%20hip%20hop"
+      },
+      {
+        "id": "acc-11",
+        "category": "Прикраси (Baryga/Trash style)",
+        "name_ua": "Світлові браслети",
+        "query": "Gelang glow stick",
+        "url": "https://www.tokopedia.com/search?q=Gelang%20glow%20stick"
+      },
+      {
+        "id": "acc-12",
+        "category": "Прикраси (Baryga/Trash style)",
+        "name_ua": "Гавайські леї",
+        "query": "Kalung bunga hawaii warna warni",
+        "url": "https://www.tokopedia.com/search?q=Kalung%20bunga%20hawaii%20warna%20warni"
+      },
+      {
+        "id": "acc-13",
+        "category": "Прикраси (Baryga/Trash style)",
+        "name_ua": "Боа з пір'я",
+        "query": "Boa bulu pink",
+        "url": "https://www.tokopedia.com/search?q=Boa%20bulu%20pink"
+      },
+      {
+        "id": "acc-14",
+        "category": "Головні убори (Sanatorium vibes)",
+        "name_ua": "Кокосовий капелюх",
+        "query": "Topi kelapa",
+        "url": "https://www.tokopedia.com/search?q=Topi%20kelapa"
+      },
+      {
+        "id": "acc-15",
+        "category": "Головні убори (Sanatorium vibes)",
+        "name_ua": "Корона для вечірки",
+        "query": "Mahkota pesta ulang tahun dewasa",
+        "url": "https://www.tokopedia.com/search?q=Mahkota%20pesta%20ulang%20tahun%20dewasa"
+      },
+      {
+        "id": "acc-16",
+        "category": "Головні убори (Sanatorium vibes)",
+        "name_ua": "Козирок пляжний",
+        "query": "Topi visor pantai",
+        "url": "https://www.tokopedia.com/search?q=Topi%20visor%20pantai"
+      },
+      {
+        "id": "acc-17",
+        "category": "Головні убори (Sanatorium vibes)",
+        "name_ua": "Бандана",
+        "query": "Bandana paisley",
+        "url": "https://www.tokopedia.com/search?q=Bandana%20paisley"
+      },
+      {
+        "id": "acc-18",
+        "category": "Party stuff (Disco/Serduchka)",
+        "name_ua": "Віяло",
+        "query": "Kipas tangan lipat",
+        "url": "https://www.tokopedia.com/search?q=Kipas%20tangan%20lipat"
+      },
+      {
+        "id": "acc-19",
+        "category": "Party stuff (Disco/Serduchka)",
+        "name_ua": "Блискітки для тіла",
+        "query": "Glitter body spray",
+        "url": "https://www.tokopedia.com/search?q=Glitter%20body%20spray"
+      },
+      {
+        "id": "acc-20",
+        "category": "Party stuff (Disco/Serduchka)",
+        "name_ua": "Тимчасові тату",
+        "query": "Tato temporer metalik",
+        "url": "https://www.tokopedia.com/search?q=Tato%20temporer%20metalik"
+      },
+      {
+        "id": "acc-21",
+        "category": "Party stuff (Disco/Serduchka)",
+        "name_ua": "Голографічна бананка",
+        "query": "Tas pinggang hologram",
+        "url": "https://www.tokopedia.com/search?q=Tas%20pinggang%20hologram"
+      },
+      {
+        "id": "acc-22",
+        "category": "Party stuff (Disco/Serduchka)",
+        "name_ua": "Міні диско-куля",
+        "query": "Bola disko gantung kecil",
+        "url": "https://www.tokopedia.com/search?q=Bola%20disko%20gantung%20kecil"
+      }
+    ]
+  },
+  "stats": {
+    "total_looks": 18,
+    "male_unisex_looks": 9,
+    "female_looks": 9,
+    "total_accessories": 22,
+    "total_search_links": 80
+  }
+}
