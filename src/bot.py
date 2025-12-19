@@ -21,8 +21,8 @@ from .response_formatter import (
     split_message,
 )
 
-# Telegram message limits
-TELEGRAM_CAPTION_LIMIT = 1024
+# Telegram message limits (900 for caption to be safe)
+TELEGRAM_CAPTION_LIMIT = 900
 TELEGRAM_MESSAGE_LIMIT = 4096
 
 # Set up logging
