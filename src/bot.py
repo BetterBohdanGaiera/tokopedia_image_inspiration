@@ -18,10 +18,10 @@ from .response_formatter import (
     format_analysis_response,
     format_error_message,
     format_start_message,
-    split_message,
+    split_message_for_caption,
 )
 
-# Telegram message limits (900 for caption to be safe)
+# Telegram message limits (conservative to be safe)
 TELEGRAM_CAPTION_LIMIT = 900
 TELEGRAM_MESSAGE_LIMIT = 4096
 
@@ -85,22 +85,22 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         # Delete the processing message
         await processing_message.delete()
 
-        # Send response based on length
-        if len(response) <= TELEGRAM_CAPTION_LIMIT:
-            # Short response - send as photo caption
-            await update.message.reply_photo(
-                photo=bytes(photo_bytes),
-                caption=response
-            )
-        else:
-            # Long response - send photo first, then text message(s)
-            await update.message.reply_photo(photo=bytes(photo_bytes))
+        # Split response: caption (max 900 chars) + follow-up messages
+        caption, follow_ups = split_message_for_caption(
+            response, TELEGRAM_CAPTION_LIMIT, TELEGRAM_MESSAGE_LIMIT
+        )
 
-            # Split if exceeds text message limit
-            for chunk in split_message(response, TELEGRAM_MESSAGE_LIMIT):
-                await update.message.reply_text(chunk)
+        # Always send photo with caption (as much as fits)
+        await update.message.reply_photo(
+            photo=bytes(photo_bytes),
+            caption=caption
+        )
 
-        logger.info(f"Successfully sent analysis response (length: {len(response)} chars)")
+        # Send remaining text as follow-up messages
+        for msg in follow_ups:
+            await update.message.reply_text(msg)
+
+        logger.info(f"Sent response: {len(caption)} chars caption + {len(follow_ups)} follow-up(s)")
 
     except Exception as e:
         logger.error(f"Error processing photo: {e}", exc_info=True)

@@ -101,41 +101,66 @@ def format_error_message(error: str | None = None) -> str:
     return f"{base_message} Спробуй ще раз пізніше."
 
 
-def split_message(text: str, max_length: int = 4096) -> list[str]:
+def split_message_for_caption(
+    text: str,
+    caption_limit: int = 900,
+    message_limit: int = 4096
+) -> tuple[str, list[str]]:
     """
-    Split a long message into chunks at logical breakpoints.
+    Split text into caption and follow-up messages.
 
-    Splits at double newlines (between items) to keep related content together.
+    Keeps item name + URL pairs together (they're separated by single newline).
+    Splits at double newlines (between items).
 
     Args:
-        text: The text to split.
-        max_length: Maximum length per chunk (default: Telegram's 4096 limit).
+        text: The full response text.
+        caption_limit: Max chars for photo caption.
+        message_limit: Max chars for text messages.
 
     Returns:
-        List of message chunks.
+        Tuple of (caption, list of follow-up messages).
     """
-    if len(text) <= max_length:
-        return [text]
+    if len(text) <= caption_limit:
+        return text, []
 
-    chunks = []
-    current_chunk = ""
+    # Split by double newlines to get logical blocks (greeting, items, etc.)
+    # Each item block contains: "item name\nURL"
+    blocks = text.split("\n\n")
 
-    # Split by double newlines (between items)
-    paragraphs = text.split("\n\n")
+    caption_blocks = []
+    remaining_blocks = []
+    current_length = 0
 
-    for para in paragraphs:
-        # If adding this paragraph exceeds limit, start new chunk
-        if current_chunk and len(current_chunk) + len(para) + 2 > max_length:
-            chunks.append(current_chunk.strip())
-            current_chunk = para
+    for i, block in enumerate(blocks):
+        block_length = len(block) + (2 if caption_blocks else 0)  # +2 for "\n\n"
+
+        if current_length + block_length <= caption_limit:
+            caption_blocks.append(block)
+            current_length += block_length
         else:
-            if current_chunk:
-                current_chunk += "\n\n" + para
+            # This and all remaining blocks go to follow-up messages
+            remaining_blocks = blocks[i:]
+            break
+
+    caption = "\n\n".join(caption_blocks)
+
+    # Split remaining into message chunks
+    follow_up_messages = []
+    if remaining_blocks:
+        current_chunk = ""
+        for block in remaining_blocks:
+            block_length = len(block) + (2 if current_chunk else 0)
+
+            if current_chunk and len(current_chunk) + block_length > message_limit:
+                follow_up_messages.append(current_chunk.strip())
+                current_chunk = block
             else:
-                current_chunk = para
+                if current_chunk:
+                    current_chunk += "\n\n" + block
+                else:
+                    current_chunk = block
 
-    # Add the last chunk
-    if current_chunk:
-        chunks.append(current_chunk.strip())
+        if current_chunk:
+            follow_up_messages.append(current_chunk.strip())
 
-    return chunks
+    return caption, follow_up_messages
