@@ -18,7 +18,12 @@ from .response_formatter import (
     format_analysis_response,
     format_error_message,
     format_start_message,
+    split_message,
 )
+
+# Telegram message limits
+TELEGRAM_CAPTION_LIMIT = 1024
+TELEGRAM_MESSAGE_LIMIT = 4096
 
 # Set up logging
 logging.basicConfig(
@@ -80,12 +85,22 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         # Delete the processing message
         await processing_message.delete()
 
-        # Send the formatted response with original photo
-        await update.message.reply_photo(
-            photo=bytes(photo_bytes),
-            caption=response
-        )
-        logger.info("Successfully sent analysis response with photo")
+        # Send response based on length
+        if len(response) <= TELEGRAM_CAPTION_LIMIT:
+            # Short response - send as photo caption
+            await update.message.reply_photo(
+                photo=bytes(photo_bytes),
+                caption=response
+            )
+        else:
+            # Long response - send photo first, then text message(s)
+            await update.message.reply_photo(photo=bytes(photo_bytes))
+
+            # Split if exceeds text message limit
+            for chunk in split_message(response, TELEGRAM_MESSAGE_LIMIT):
+                await update.message.reply_text(chunk)
+
+        logger.info(f"Successfully sent analysis response (length: {len(response)} chars)")
 
     except Exception as e:
         logger.error(f"Error processing photo: {e}", exc_info=True)

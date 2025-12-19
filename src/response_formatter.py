@@ -99,3 +99,43 @@ def format_error_message(error: str | None = None) -> str:
     if error:
         return f"{base_message} {error}"
     return f"{base_message} Спробуй ще раз пізніше."
+
+
+def split_message(text: str, max_length: int = 4096) -> list[str]:
+    """
+    Split a long message into chunks at logical breakpoints.
+
+    Splits at double newlines (between items) to keep related content together.
+
+    Args:
+        text: The text to split.
+        max_length: Maximum length per chunk (default: Telegram's 4096 limit).
+
+    Returns:
+        List of message chunks.
+    """
+    if len(text) <= max_length:
+        return [text]
+
+    chunks = []
+    current_chunk = ""
+
+    # Split by double newlines (between items)
+    paragraphs = text.split("\n\n")
+
+    for para in paragraphs:
+        # If adding this paragraph exceeds limit, start new chunk
+        if current_chunk and len(current_chunk) + len(para) + 2 > max_length:
+            chunks.append(current_chunk.strip())
+            current_chunk = para
+        else:
+            if current_chunk:
+                current_chunk += "\n\n" + para
+            else:
+                current_chunk = para
+
+    # Add the last chunk
+    if current_chunk:
+        chunks.append(current_chunk.strip())
+
+    return chunks
