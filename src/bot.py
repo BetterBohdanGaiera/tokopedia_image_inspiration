@@ -1,5 +1,6 @@
 """Main Telegram bot for Tokopedia fashion search."""
 
+import asyncio
 import logging
 
 from telegram import Update
@@ -70,8 +71,8 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
         logger.info(f"Downloaded photo, size: {len(photo_bytes)} bytes")
 
-        # Analyze the image with Gemini
-        analysis_result = analyze_image(bytes(photo_bytes))
+        # Analyze the image with Gemini (run in thread to not block other users)
+        analysis_result = await asyncio.to_thread(analyze_image, bytes(photo_bytes))
 
         # Format the response
         response = format_analysis_response(analysis_result)

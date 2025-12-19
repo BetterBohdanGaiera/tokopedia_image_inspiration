@@ -46,8 +46,9 @@ def format_analysis_response(analysis_result: dict[str, Any]) -> str:
 
     lines = []
 
-    # Random fun greeting
-    lines.append(random.choice(GREETINGS))
+    # Use LLM-generated greeting if available, fallback to random
+    greeting = analysis_result.get("greeting_ua") or random.choice(GREETINGS)
+    lines.append(greeting)
     lines.append("")
 
     # Format each person's items
