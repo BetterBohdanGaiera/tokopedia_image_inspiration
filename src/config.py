@@ -13,8 +13,9 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 TELEGRAM_BOT_API = os.getenv("TELEGRAM_BOT_API")
 
-# Tokopedia base URL
-TOKOPEDIA_BASE_URL = "https://www.tokopedia.com/search?q="
+# Tokopedia base URL with Bali location filter
+BALI_CITY_IDS = "258,259,260,261,262,263,264,265,476,266"
+TOKOPEDIA_BASE_URL = f"https://www.tokopedia.com/search?fcity={BALI_CITY_IDS}&q="
 
 # Gemini model to use (best accuracy for fashion analysis)
 GEMINI_MODEL = "gemini-2.5-pro"
