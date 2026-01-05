@@ -82,7 +82,15 @@ def format_start_message() -> str:
     Returns:
         Welcome message in Ukrainian.
     """
-    return "Допомагаю знайти луки на Tokopedia. Кидай фото - кину посилання!"
+    return (
+        "Привіт! 👋 Я бот, який допомагає знаходити луки на Tokopedia.\n"
+        "\n"
+        "Як користуватися:\n"
+        "📸 Надішли мені фото з одягом\n"
+        "🔗 Отримай посилання на схожі речі з Tokopedia\n"
+        "\n"
+        "Давай спробуємо - кидай фото!"
+    )
 
 
 def format_error_message(error: str | None = None) -> str:
